@@ -1,0 +1,137 @@
+body {
+  max-width: 50vw;
+  max-height: 100vh;
+  margin: 0 auto;
+  background-color: #d4ceba;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slider {
+  position: relative;
+  height: 80vh;
+  width: 90vh;
+  margin: 0 auto;
+  background-color: #414141;
+}
+
+.slider img {
+  display: block;
+  max-height: 75vh;
+  max-width: 85vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.appear {
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slider i.fas {
+  color: rgba(25, 25, 25, 0.7);
+  font-size: 2.5em;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+}
+
+.slider i.fa-arrow-circle-right {
+  right: 2%;
+}
+
+.slider i.fa-arrow-circle-left {
+  left: 2%;
+}
+
+.thumbnail {
+  position: relative;
+  width: 90vh;
+  margin: 0 auto;
+  background-color: #414141;
+}
+
+.thumbnail ul {
+  margin: 0;
+  padding: 0px;
+  width: 90vh;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.thumbnail ul li {
+  display: block;
+  margin: 3px;
+  height: 6vh;
+  width: 6vh;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-color: white;
+}
+
+.thumbnail ul li:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.thumbnail ul li.selected {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.thumbnail ul li img {
+  display: block;
+  margin: 0 auto;
+  height: 6vh;
+  width: 6vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
